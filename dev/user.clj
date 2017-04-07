@@ -16,7 +16,7 @@
    [ring-and-compojure.system :as system]
    [clj-http.client :as http]))
 
-(def config {:id "ring-and-compojure" :port 8080})
+(def config {:id "ring-and-compojure" :port 8002})
 
 (defonce system
   (system/system config))
@@ -62,5 +62,5 @@
   (go))
 
 (comment :scratch
-  (http/get "http://localhost:8080/api/hello" {:throw-exceptions false})
-  (json/read-str (:body (http/get "http://localhost:8080/hello" {:throw-exceptions false}))))
+  (http/get "http://localhost:8002/" {:throw-exceptions false})
+  )
