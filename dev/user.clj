@@ -13,10 +13,10 @@
    [clojure.tools.namespace.repl :refer [refresh refresh-all]]
    [clojure.data.json :as json]
    [com.stuartsierra.component :as component]
-   [ring-and-compojure.system :as system]
+   [example.system :as system]
    [clj-http.client :as http]))
 
-(def config {:id "ring-and-compojure" :port 8002})
+(def config {:id "example" :port 8002})
 
 (defonce system
   (system/system config))

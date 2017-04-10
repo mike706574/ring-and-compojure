@@ -1,4 +1,4 @@
-(ns ring-and-compojure.service
+(ns example.service
   (:require [clojure.string :as str]
             [com.stuartsierra.component :as component]
             [ring.adapter.jetty :as jetty]

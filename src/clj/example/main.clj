@@ -1,9 +1,9 @@
-(ns ring-and-compojure.main
+(ns example.main
   (:require [com.stuartsierra.component :as component]
-            [ring-and-compojure.system :as system])
+            [example.system :as system])
   (:gen-class :main true))
 
-(def id "ring-and-compojure")
+(def id "example")
 (def port 8080)
 (def config {:id id :port port})
 

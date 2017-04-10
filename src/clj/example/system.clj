@@ -1,7 +1,7 @@
-(ns ring-and-compojure.system
+(ns example.system
   (:require [compojure.core :refer [defroutes GET]]
             [compojure.route :as route]
-            [ring-and-compojure.service :as service]
+            [example.service :as service]
             [taoensso.timbre :as log]))
 
 (defroutes app
